@@ -1,1 +1,1 @@
-{"path":"Automation Anywhere\\Bots\\Finance\\Etimad\\NewTender\\Steps\\InvitationsStep","manualDependencies":[],"scannedDependencies":["Automation Anywhere\\Bots\\Finance\\Etimad\\UIElements\\button"]}
+{"path":"Automation Anywhere\\Bots\\Finance\\Etimad\\NewTender\\Steps\\InvitationsStep","manualDependencies":[],"scannedDependencies":["Automation Anywhere\\Bots\\Finance\\Etimad\\UIElements\\button","Automation Anywhere\\Bots\\Finance\\Etimad\\UIElements\\awaitLoader","Automation Anywhere\\Bots\\Finance\\Etimad\\UIElements\\textInput"]}
