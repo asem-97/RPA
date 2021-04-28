@@ -1,0 +1,1 @@
+{"path":"Automation Anywhere\\Bots\\SPA\\POC\\MasterBot","manualDependencies":[],"scannedDependencies":["Automation Anywhere\\Bots\\SPA\\POC\\Bots\\TakeNews","Automation Anywhere\\Bots\\SPA\\POC\\Bots\\Login","Automation Anywhere\\Bots\\SPA\\POC\\Bots\\PostTweet"]}
