@@ -1,0 +1,54 @@
+RELEASE NOTES for ETIMAD NEW TENDER PROCESS
+===========================================
+ -  - - -- ---< Version 1.0 >--- -- - -  -
+===========================================
+
+PROCESS DESRIPTION
+------------------
+This process is designed to automatically input new tender data into Etimad plaform from a standardized Excell template file.
+
+REQUIRED SETUP
+--------------
+1- Folders:
+The process assumes the following folder structure to be in place:
+__> BaseFolder
+  |__> Tender 1
+     |__> BOQ
+     |__> Tender Files
+     |__> Supporting Files
+     |__> Files Of Minimum
+
+Note: folder names are configurable within the bot as mentioned below.
+
+BaseFolder	: Contains folders for tenders.
+Tender 1	: Contains folders and file for single tender.
+BOQ		: Contains BOQ Excel files which must comply with Etimad template.
+Tender Files	: Contains one .zip/.pdf file to be attached in the first line item of the first BOQ table.
+Supporting Files: Contains one or more .zip/.pdf files to be attached in the last step in Etimad.
+
+An example folder structure with files should look like the following:
+__> C:\Etimad\New Tender
+  |__> Tender 1
+     |__> BOQ
+     |  |__ boq_file1.xlsx
+     |  |__ boq_file2.xlsx
+     |  |__ ...
+     |__> Tender Files
+     |  |__ tender_file.zip
+     |__> Supporting Files
+     |  |__ attachment1.zip
+     |  |__ attachment2.pdf
+     |  |__ ...
+     |__> Files Of Minimum
+     |  |__ attachment1.zip
+     |__ Etimad New Tender.xlsm
+
+2- Variables:
+Edit MasterBot to confirm/update the following variables:
+* $strBaseFolder$: The path for the BaseFolder mentioned above. Default value: C:\Etimad\New Tender
+* $strEtimadNewTenderFileName$: The name of the new tender Excel file for all tenders. Default value: Etimad New Tender.xlsm
+* $strProcessedFlag$: Each processed tender folder will be renamed by inserting this value before its name. Default value: (-)
+* $strSupportingDocsFolderName$: The name of the Supporting Files folder mentioned above. Default value: ملفات داعمة
+* $strTenderBOQFolderName$: The name of the BOQ folder mentioned above. Default value: جداول الكميات
+* $strTenderDocsFolderName$: The name of the Tender Files folder mentioned above. Default value: ملفات المنافسة
+* $strFilesOfMinimumFolderPath$: The name of the Files Of Minimum folder mentioned above. Default value: ملفات دراسة الحد الادنى
