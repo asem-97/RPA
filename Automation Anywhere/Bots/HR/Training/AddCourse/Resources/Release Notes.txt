@@ -1,0 +1,22 @@
+
+RELEASE NOTES for TRAINING NEW COURSE PROCESS
+=============================================
+Version 1.0
+=============================================
+
+PROCESS DESCRIPTION
+-------------------
+This process is designed to read courses data from Excel file and input it in the Learning Management System of the Royal Protocol. The process deals with three major areas: training program, offer method, and training class.
+The process involves checking for existing training program and existing offer method before creating the training class.
+
+REQUIRED SETUP
+--------------
+1- Files
+The attached Training.xlsx file should be used by the user to fill the courses data to be consumed by the process. The file should be placed in a path accessible by the bot. The suggested path is C:\Training\Training.xlsx
+
+2- Variables
+Edit MasterBot and confirm/update the following variables values:
+- $FileName$: The name of the Excel file. Default value: Training.xlsx
+- $FilePath$: The path where $FileName$ is located. Default value: C:\Training
+Note:
+The bot will construct the full path to the file as: $FilePath$\$FileName$
